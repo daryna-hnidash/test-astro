@@ -2,7 +2,7 @@ body {
   font-family: "Roboto Flex", sans-serif;
   color: rgb(61, 8, 124);
   margin: 0;
-  background: url("/img/bg.jpg");
+  background: url("/test-astro/img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ li {
   left: 2px;
   height: 16px;
   width: 16px;
-  background-image: url("/img/arr.svg");
+  background-image: url("/test-astro/img/arr.svg");
   background-repeat: no-repeat;
   animation: appear;
   animation-name: appear;
@@ -398,7 +398,7 @@ select#birthplace {
   right: 10px;
   width: 10px;
   height: 5px;
-  background-image: url("/img/arr.svg");
+  background-image: url("/test-astro/img/arr.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
