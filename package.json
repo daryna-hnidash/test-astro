@@ -9,8 +9,7 @@
   "author": "Daryna Hnidash",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^6.1.1",
-    "jquery": "^3.7.1"
+    "gh-pages": "^6.1.1"
   },
   "devDependencies": {}
 }
