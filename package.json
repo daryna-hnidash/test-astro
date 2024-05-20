@@ -1,0 +1,16 @@
+{
+  "name": "test_astro_daryna_hnidash",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daryna Hnidash",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {}
+}

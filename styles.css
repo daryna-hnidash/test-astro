@@ -1,0 +1,426 @@
+body {
+  font-family: "Roboto Flex", sans-serif;
+  color: rgb(61, 8, 124);
+  margin: 0;
+  background: url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 15vh;
+  width: 334px;
+  background-color: rgb(252, 253, 250);
+  padding: 40px 24px;
+  border-radius: 30px;
+}
+
+.step {
+  display: none;
+}
+.step__block--1 {
+  margin-bottom: 32px;
+}
+.step__content {
+  display: grid;
+  justify-items: center;
+}
+.step__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.step__title--h2 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.step__title--0 {
+  margin-bottom: 24px;
+}
+.step__accent {
+  color: rgb(252, 124, 60);
+}
+.step__img {
+  margin-bottom: 24px;
+}
+.step__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+}
+.step__btn {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border-radius: 99px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-block: 14px;
+  text-transform: uppercase;
+  background-color: rgb(252, 124, 60);
+  border: none;
+  color: rgb(252, 253, 250);
+  cursor: pointer;
+}
+.step__btn--disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+.step__calculating {
+  display: flex;
+}
+
+.active {
+  display: grid;
+  gap: 32px;
+  justify-items: center;
+}
+
+.background-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./img/1.png");
+}
+
+#circle {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  transform: rotate(90deg);
+}
+
+.progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #3498db;
+}
+
+.circle__container {
+  height: 124px;
+  position: relative;
+}
+
+.loading-dots {
+  display: flex;
+}
+
+.dot {
+  font-size: 24px;
+  font-weight: 500;
+  animation: dot-blink 1.4s infinite both;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes dot-blink {
+  0%, 80%, 100% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+.ul {
+  width: 100%;
+}
+
+.li {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  color: rgb(31, 31, 31);
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.li:last-child {
+  margin-bottom: 0;
+}
+
+.check-circle {
+  display: block;
+  height: 16px;
+  width: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgb(252, 124, 60);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 4px;
+}
+
+.checkmark {
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 2px;
+  height: 16px;
+  width: 16px;
+  background-image: url("/img/arr.svg");
+  background-repeat: no-repeat;
+  animation: appear;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transform: translateY(-4px);
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.message {
+  background-color: rgb(255, 246, 239);
+  animation: dot-blink 1.4s infinite both;
+  width: 100%;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  color: rgb(31, 31, 31);
+  border-radius: 99px;
+  border: 1px solid rgb(252, 124, 60);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.highlight {
+  position: relative;
+  background-color: none;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  display: none !important;
+}
+
+.ui-datepicker-title {
+  display: none !important;
+}
+
+.ui-datepicker {
+  background-color: #fff;
+}
+
+.ui-datepicker {
+  border: 1px solid #ccc;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  text-align: center;
+  display: flex;
+  align-content: center;
+}
+
+.ui-datepicker-calendar tr {
+  margin-bottom: 16px;
+}
+
+.ui-datepicker-calendar th {
+  border-bottom: 1px solid #ccc;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  font-size: 16px;
+}
+
+.ui-datepicker-calendar th {
+  color: rgb(61, 8, 124);
+  font-size: 14px;
+  padding-block: 16px;
+  font-weight: normal;
+}
+
+.ui-datepicker {
+  width: min-content;
+  height: 269.26px;
+  border-radius: 10px;
+  border: 1.23px solid rgb(239, 239, 239);
+  display: flex;
+  margin: 0 auto;
+}
+
+.ui-datepicker-calendar .ui-datepicker-current-day {
+  height: 20px;
+}
+
+.highlight-period {
+  color: rgb(31, 31, 31);
+  position: relative;
+}
+
+.highlight-date {
+  border-radius: 50%;
+  background-color: rgb(252, 124, 60);
+  color: rgb(31, 31, 31);
+}
+
+.highlight-start {
+  border-radius: 50%;
+  background-color: rgb(252, 124, 60);
+  color: rgb(31, 31, 31);
+}
+
+.highlight-end {
+  border-radius: 50%;
+  background-color: rgb(252, 124, 60);
+  color: rgb(31, 31, 31);
+}
+
+.ui-datepicker-calendar .ui-datepicker-current-day {
+  position: relative;
+}
+
+.highlight-period::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 246, 239);
+  opacity: 0.8;
+}
+
+.ui-datepicker-other-month a {
+  color: #999 !important;
+}
+
+.ui-datepicker {
+  display: none;
+}
+
+.selects {
+  display: flex;
+  gap: 10px;
+}
+
+.selects select {
+  height: 40px;
+  padding-left: 16px;
+  font-size: 16px;
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 30px;
+  background-color: rgb(252, 253, 250);
+  color: rgb(191, 191, 191);
+  text-align: left;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+select#day,
+select#year {
+  width: 85px;
+}
+
+select#month {
+  width: 100px;
+}
+
+select#birthplace {
+  width: 286px;
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  width: 10px;
+  height: 5px;
+  background-image: url("/img/arr.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.date-selects select::-ms-expand {
+  display: none;
+}
+
+#bottom-tetx {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 11px;
+  padding: 8px;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
