@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "test",
   "main": "index.js",
-  "homepage": "./test-astro",
+  "homepage": "https://daryna-hnidash.github.io/test-astro",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
