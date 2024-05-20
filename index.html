@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>astro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="step step--0 active">
+        <div class="step__content">
+          <h1 class="step__title step__title--0">
+            Calculate the nearest days that will have
+            <br />
+            <span class="step__accent">fatal consequences</span>
+            <br />
+            in your life
+          </h1>
+
+          <img
+            class="step__img"
+            src="/img/troubles.png"
+            alt="Possible difficulties you will encounter"
+          />
+
+          <p class="step__text">Prediction accuracy: up to 96%</p>
+        </div>
+
+        <button class="step__btn">Continue</button>
+      </div>
+
+      <div class="step step--1">
+        <div class="step__content">
+          <div class="step__block step__block--1">
+            <h2 class="step__title step__title--h2">What's your birthdate?</h2>
+            <div class="selects">
+              <div class="select__wrapper">
+                <select id="day">
+                  <option selected disabled hidden >Day</option>
+                </select>
+                <span class="arrow"></span>
+              </div>
+
+              <div class="select__wrapper">
+                <select id="month">
+                  <option selected disabled hidden> Month</option>
+                </select>
+                <span class="arrow"></span>
+              </div>
+              <div class="select__wrapper">
+              <select id="year">
+                <option selected disabled hidden >Year</option>
+              </select>
+              <span class="arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step__block">
+            <h2 class="step__title step__title--h2">What's your birthplace?</h2>
+            <div class="selects">
+              <div class="select__wrapper">
+                <select id="birthplace">
+                  <option selected disabled hidden> Enter your town/city</option>
+                </select>
+                <span class="arrow"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="btn" class="step__btn ">Continue</button>
+      </div>
+
+      <div class="step step--2">
+        <div class="step__calculating">
+          <h1 class="step__title">Calculating</h1>
+          <div class="loading-dots">
+            <div class="dot">.</div>
+            <div class="dot">.</div>
+            <div class="dot">.</div>
+          </div>
+        </div>
+          <div class="circle__container">
+            <div id="circle"></div>
+            <div class="progress-value">0%</div>
+          </div>
+        <ul class="ul">
+          <li class="li"><span class="check-circle">
+            <span class="checkmark"></span>
+          </span>Defining negative periods
+          </li>
+          <li class="li"><span class="check-circle">
+            <span class="checkmark"></span>
+          </span>Anazyling most insecure spheres 
+          </li>
+          <li class="li"><span class="check-circle">
+            <span class="checkmark"></span>
+          </span>Your personal calendar is generated 
+          </li>
+
+        </ul>
+        <div class="message">You will have 
+          <br />
+          a very rough month</div>
+      </div>
+
+      <div class="step step--3">
+        <div id="datepicker"></div>
+        <p class="step__text">There's a way to avoid problems on negative days. Press the button and send SMS to learn how</p>
+        <button class="step__btn" id="finish">Continue</button>
+      </div>
+      <div class="step">
+        step 5
+        <button class="step__btn">Continue</button>
+      </div>
+    </div>
+    <div id="bottom-tetx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima veritatis dolorem voluptas repellendus et nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima veritatis dolorem voluptas repellendus et nihil!  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-circle-progress@1.2.2/dist/circle-progress.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
